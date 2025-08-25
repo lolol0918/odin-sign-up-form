@@ -17,15 +17,51 @@
             </div>
             <p class="photo-credit">Photo by Halle West on Unsplash</p>
         </aside>
-        <!-- main form -->
-        <main class="main-content">
-            <header class="form-header">
-                <h1 class="form-title">Create an Account</h1>
-            </header>
-            <section class="form-section">
+        <main>
+            <div class="disclaimer-container">
+                <div class="disclaimer">
+                    <p>
+                        This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.
+Sign up
+                        <em>now</em>
+                        to get started.
+                    </p>
+                    <p>
+                        You know
+                        <em>you</em>
+                        want to.
+                    </p>
+                </div>
+            </div>
+            <section class="signup-box">
+                <header class="signup-header">
+                    <h1>Let's do this!</h1>
+                </header>
                 <form class="signup-form">
                     <fieldset class="form-fieldset">
-                        <legend class="fieldset-title">Account Details</legend>
+                        <div class="form-group">
+                            <label for="first-name" class="form-label">First Name</label>
+                            <input
+                                type="text"
+                                id="first-name"
+                                name="first-name"
+                                class="form-input"
+                                required
+                            >
+                        </div>
+                        <div class="form-group">
+                            <label for="last-name" class="form-label">Last Name</label>
+                            <input
+                                type="text"
+                                id="last-name"
+                                name="last-name"
+                                class="form-input"
+                                required
+                            >
+                        </div>
+                    </fieldset>
+                    <fieldset class="form-fieldset">
+                        <legend class="fieldset-title">Contact Information</legend>
                         <div class="form-group">
                             <label for="email" class="form-label">Email</label>
                             <input
@@ -36,6 +72,18 @@
                                 required
                             >
                         </div>
+                        <div class="form-group">
+                            <label for="telephone" class="form-label">Telephone</label>
+                            <input
+                                type="tel"
+                                id="telephone"
+                                name="telephone"
+                                class="form-input"
+                            >
+                        </div>
+                    </fieldset>
+                    <fieldset class="form-fieldset">
+                        <legend class="fieldset-title">Password</legend>
                         <div class="form-group">
                             <label for="password" class="form-label">Password</label>
                             <input
@@ -60,12 +108,7 @@
                     <button type="submit" class="btn btn-primary">Sign Up</button>
                 </form>
             </section>
-            <footer class="form-footer">
-                <p class="login-prompt">
-                    Already have an account?
-                    <a href="#" class="login-link">Log in</a>
-                </p>
-            </footer>
-            <script src="./static/scripts/script.js"></script>
-        </body>
-    </html>
+        </main>
+        <script src="./static/scripts/script.js"></script>
+    </body>
+</html>
